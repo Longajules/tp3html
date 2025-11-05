@@ -1,109 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='CV-css.css'>
-    <script src='main.js'></script>
+    <title>CV - Jules Longa</title>
+
+    <!-- Feuille de style -->
+    <link rel="stylesheet" type="text/css" media="screen" href="CV-css.css">
 </head>
 <body>
 
-    <!--div general-->
-
+    <!-- === CONTAINER PRINCIPAL === -->
     <div class="container">
 
-        <!--bar lateral-->
-
-        <div class="sidebar">
+        <!-- === BARRE LATÉRALE (informations personnelles) === -->
+        <aside class="sidebar">
             <div class="name">Longa</div>
             <div class="surname">Jules</div>
 
-            <!--coordonée-->
-            
+            <!-- Coordonnées -->
             <div class="contact-info">
-                103 rue de beauvais<br>
-                chevriere<br>
+                103 rue de Beauvais<br>
+                Chevrière<br>
                 +33 6 74 88 87 65<br>
                 judonite60@gmail.com
             </div>
 
-            <!--competances-->
-
-            <h2>Talents</h2>
+            <!-- Compétences -->
+            <h2>COMPÉTENCES</h2>
             <ul>
-                <li>supervision de réseau</li>
-                <li>html</li>
+                <li>Supervision réseau</li>
+                <li>HTML</li>
                 <li>CSS</li>
-                <li>java script</li>
+                <li>JavaScript</li>
                 <li>Bonne éloquence</li>
-
             </ul>
 
-            <!--diplomes-->
-
-            <h2>Diplômes</h2>
+            <!-- Diplômes -->
+            <h2>DIPLÔMES</h2>
             <div class="distinction">
-                Bac pro SN Système Numérique<br>
-                Avec mention.
+                Baccalauréat technologique<br>
+                Mention Bien
             </div>
 
-            <!--langages-->
-
+            <!-- Langues -->
             <h2>LANGUES</h2>
             <ul>
-                <li>français, natif</li>
-                <li>anglais, A2</li>
-                <li>espagnol, A1</li>
+                <li>Français — langue maternelle</li>
+                <li>Anglais — niveau A2</li>
+                <li>Espagnol — niveau A1</li>
             </ul>
-        </div>
 
-        <!--div central-->
+            <!-- Lien vers la version anglaise -->
+            <div class="language-switch">
+                <a href="CVanglais.html" style="color:white;">Switch to English</a>
+            </div>
+        </aside>
 
-        <div class="main-content">
+        <!-- === CONTENU PRINCIPAL === -->
+        <main class="main-content">
 
-            <!--experiences-->
+            <h1>EXPÉRIENCES PROFESSIONNELLES</h1>
 
-            <h1>EXPERIENCE</h1>
-            
-            <div class="job-title">EPIDE</div>
-            <div class="duration">durant 4 semaines</div>
-            <div class="description">
-                durant ce stage j'ai eu beaucoup d'experience sur le métier de technicien informatique.
+            <div class="job">
+                <div class="job-title">EPIDE</div>
+                <div class="duration">Stage de 4 semaines</div>
+                <div class="description">
+                    Lors de ce stage, j’ai acquis de nombreuses connaissances sur le métier de technicien informatique.
+                </div>
             </div>
 
-            <div class="job-title">FM logistics</div>
-            <div class="duration">durant 4 semaines</div>
-            <div class="description">
-                durant ce stage j'ai eu beaucoup d'experience sur le métier de technicien informatique.
+            <div class="job">
+                <div class="job-title">FM Logistics</div>
+                <div class="duration">Stage de 4 semaines</div>
+                <div class="description">
+                    J’ai approfondi mes compétences en maintenance informatique et en gestion des postes utilisateurs.
+                </div>
             </div>
-
-            <!--écoles-->
 
             <h1>FORMATION</h1>
-            
-            <div class="job-title">Institut Saint Charles, chauny, FRANCE— Bac pro SN Système Numérique</div>
-            <div class="description">
-                Durant cette formation à l'institut Saint Charles à Chauny (FRANCE), j'ai acquis beaucoup de connaissances qui me permettent d'obtenir mon Bac pro SN Système Numérique avec mention.
+
+            <div class="job">
+                <div class="job-title">Institut Saint Charles, Chauny (France) — Baccalauréat technologique</div>
+                <div class="description">
+                    Formation qui m’a permis d’acquérir de solides bases techniques et théoriques en informatique.
+                </div>
             </div>
 
-            <div class="job-title">La Providence, Amiens, FRANCE — Diplôme national supérieur</div>
-            <div class="duration">septembre 2025 à maintenant</div>
-            <div class="description">
-                D'ici la fin de l'année, j'aurai acquis des compétences en C++, JavaScript, Python et HTML.
+            <div class="job">
+                <div class="job-title">La Providence, Amiens (France) — BTS CIEL</div>
+                <div class="duration">De septembre 2025 à aujourd’hui</div>
+                <div class="description">
+                    Actuellement en BTS CIEL, j’approfondis mes compétences en C++, JavaScript, Python et HTML.
+                </div>
             </div>
-
-            <!--projets acomplies-->
 
             <h1>PROJETS</h1>
-            <div class="job-title">WDS Windows Serveur Deployment</div>
-            <div class="description">
-                Durant ma dernière année de lycée, j'ai été mandaté par mon professeur pour créer un serveur WDS afin de préparer de nouveaux postes pour l'école.
+            <div class="job">
+                <div class="job-title">Déploiement WDS (Windows Deployment Server)</div>
+                <div class="description">
+                    Projet réalisé au lycée : création d’un serveur WDS pour déployer des postes de travail dans le réseau de l’établissement.
+                </div>
             </div>
-        </div>
+        </main>
     </div>
 
-    <!--fin-->
-    
+    <!-- === BOUTON RETOUR AU MENU PRINCIPAL === -->
+    <a href="index.html" class="back-button">Retour au menu principal</a>
+
 </body>
 </html>

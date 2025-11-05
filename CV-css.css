@@ -1,112 +1,138 @@
+/* === STYLE GLOBAL === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            padding: 4.6px;
-        }
+/* === CONTENEUR PRINCIPAL === */
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            
-        }
+/* === BARRE LATÉRALE === */
+.sidebar {
+  background-color: #1e88e5;
+  color: white;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-        .container {
-            max-width: ;
-            margin: 0 auto;
-            background-color: white;
-            display: flex;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+.name {
+  font-size: 2em;
+  font-weight: bold;
+}
 
-        .sidebar {
-            background-color: #2c3e50;
-            color: white;
-            width: 280px;
-            padding: 40px 30px;
-        }
+.surname {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
 
-        .main-content {
-            flex: 1;
-            padding: 40px;
-        }
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-        .name {
-            font-size: 32px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
+.sidebar h2 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
 
-        .surname {
-            font-size: 24px;
-            text-transform: lowercase;
-            margin-bottom: 30px;
-        }
+.contact-info {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 
-        .contact-info {
-            font-size: 12px;
-            line-height: 1.8;
-            margin-bottom: 40px;
-        }
+.language-switch {
+  margin-top: 30px;
+  font-weight: bold;
+}
 
-        .sidebar h2 {
-            font-size: 14px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            margin-top: 30px;
-            border-bottom: 2px solid white;
-            padding-bottom: 5px;
-        }
+/* === CONTENU PRINCIPAL === */
+.main-content {
+  width: 70%;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
-        .sidebar h2:first-of-type {
-            margin-top: 0;
-        }
+.main-content h1 {
+  border-bottom: 2px solid #1e88e5;
+  padding-bottom: 5px;
+  color: #1e88e5;
+}
 
-        .sidebar ul {
-            list-style: none;
-            font-size: 13px;
-            line-height: 2;
-        }
+.job {
+  margin-bottom: 20px;
+}
 
-        .sidebar ul li:before {
-            content: "- ";
-        }
+.job-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
-        .main-content h1 {
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            margin-top: 30px;
-        }
+.duration {
+  font-style: italic;
+  color: gray;
+}
 
-        .main-content h1:first-of-type {
-            margin-top: 0;
-        }
+/* === BOUTON RETOUR MENU PRINCIPAL === */
+.back-button {
+  position: fixed;              /* Le bouton reste visible même quand on défile */
+  bottom: 20px;                 /* En bas */
+  right: 20px;                  /* À droite */
+  background-color: #1e88e5;    /* Couleur bleue */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
 
-        .job-title {
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
+/* Effet au survol */
+.back-button:hover {
+  background-color: #1565c0;
+}
 
-        .duration {
-            font-style: italic;
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 10px;
-        }
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 
-        .description {
-            font-size: 13px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
+  .sidebar, .main-content {
+    width: 100%;
+  }
 
-        .distinction {
-            font-size: 13px;
-            line-height: 1.8;
-        }
+  .sidebar {
+    text-align: center;
+  }
+
+  .back-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 16px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.5em;
+  }
+
+  .surname {
+    font-size: 1.2em;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
